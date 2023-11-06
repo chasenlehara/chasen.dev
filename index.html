@@ -78,6 +78,25 @@
             color: white;
         }
 
+        @media (prefers-color-scheme: dark) {
+            a {
+                color: oklch(97.43% 0.1 var(--blue-hue));
+            }
+
+            a:hover {
+                color: oklch(97.43% 0 var(--blue-hue));
+            }
+
+            /* a:focus {
+                box-shadow: 0 0 0 3px var(--color-pink-light);
+            }
+
+            a:active {
+                background: var(--color-pink-light);
+                color: white;
+            } */
+        }
+
         @media (prefers-reduced-motion: no-preference) {
             a {
                 transition: all 0.3s;
@@ -190,6 +209,13 @@
         main {
             background: oklch(99.99% 0.1 var(--pink-hue));
             color: black;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            main {
+                background: oklch(19.97% var(--pink-chrome) var(--pink-hue));
+                color: white;
+            }
         }
 
         section {
